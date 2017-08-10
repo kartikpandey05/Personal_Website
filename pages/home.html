@@ -1,9 +1,49 @@
 <div class="box" ng-controller="mainController">
-    
-    
+     <div class="header-box" id="headerBox">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PROJECTS</a></li>
+            </ul>
+        </div>
+        <footer>Copyright &copy 2017 || Designed and Developed By KARTIK PANDEY <a class="copyright" href="https://angular.io/" target="_blank" title="ANGULAR - One framework.
+Mobile & desktop.">(using Angular.JS)</a></footer>
     
 </div>
 
 <style>
-    
+    .header-box{
+          border: 2px solid whitesmoke;
+          position:relative;
+          background-color: whitesmoke;
+          padding: 5px;
+          margin: 10px;
+          overflow: visible;
+          opacity: 0.3;
+          font: 20px;
+          font-family:"Times New Roman", Times, serif;
+          margin-right: 200px;
+          box-shadow: 5px 5px 2px #000000;
+      }
+      li{
+          display: inline-block;
+          padding: 5px;
+         font-size: 17px;
+      }
+    #hearderBox:hover{
+        background-color: whitesmoke;
+        opacity: 0.6;
+        
+    }
+    .copyright{
+        font-size: 10px;
+        
+    }
+  footer{
+          position: relative;
+          margin-top: 550px;
+      margin-left: 780px;
+          text-shadow: 1px 1px;
+          font-size: 15px;
+
+      }
 </style>

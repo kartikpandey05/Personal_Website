@@ -111,12 +111,6 @@
         <link rel="stylesheet" href="bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg">
   <style>      
     
-	body{
-	 background-color: #000000;
-     padding: 0px;
-     margin: 0px;
- }
-
       #gradient
         
       {
@@ -125,66 +119,18 @@
   padding: 0px;
   margin: 0px;
   position: absolute;
-          position: fixed;
-      }   
-      
-      
-      .header_top{
-          background-color:whitesmoke;
-         position: relative;
-         border: 2px solid whitesmoke;
-          
-      }
-      li{
-          display: inline-block;
-      }
-      .header_content{
-          position: relative;
-          text-align: right;
-          margin-right: 100px;
-      }
-      .footer {
-         background-color:whitesmoke;
-         color:black;
-         position: relative;
-         border: 2px solid whitesmoke;
-         opacity: 0.5;
-          margin-top: 573px;
-      }
-     .footer_content{
-          text-align: center;
-          font: 20px;
-          font-family:"Times New Roman", Times, serif;
-            
-      }
-footer {
-          height: 30px;
-      }
-         li:hover{ 
-             color: black;
-             
-    }
+      }  
+    
 </style> 
+    <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
     </head>
  
 <body>
-    <header class="header_top">
+   <header></header>
+    <div id="gradient" ng-view >
         
-        <div class="header_content">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-            
-        </div>
-    </header>
-    
-    
-    <div class="container" id="gradient" ng-view >
     </div>
-      <footer class="footer">
-        <div class="footer_content">
-            Copyright &copy 2017 Developed and Designed by KARTIK PANDEY
-        </div> 
-    </footer>
+     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js">
     </script>
 
